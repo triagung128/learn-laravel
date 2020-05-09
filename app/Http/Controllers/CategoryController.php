@@ -13,7 +13,8 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        //
+        // return "DAFTAR CATEGORY";
+        return \Redirect::to("categories/10/edit");
     }
 
     /**
