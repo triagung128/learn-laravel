@@ -58,3 +58,6 @@ Route::group(["prefix" => "/products"], function(){
 Route::view("/path", "nama.view");
 
 Route::get("show-item-list", "ItemController@showAllItems");
+
+// Membuat Route Resource
+Route::resource("categories", "CategoryController");
