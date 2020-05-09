@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,3 +21,7 @@ Route::get('/', function () {
 Route::get('/helo', function() {
     return "Hello World";
 });
+
+Route::get('/product/display', 'ProductController@showAll');
+
+Route::get('/product/save', 'ProductController@saveNew');
