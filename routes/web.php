@@ -25,3 +25,7 @@ Route::get('/helo', function() {
 Route::get('/product/display', 'ProductController@showAll');
 
 Route::get('/product/save', 'ProductController@saveNew');
+
+Route::get("/pintu-masuk", function(){
+    return "Selamat datang di pintu masuk";
+});
