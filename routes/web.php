@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\TestController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -26,6 +27,4 @@ Route::get('/product/display', 'ProductController@showAll');
 
 Route::get('/product/save', 'ProductController@saveNew');
 
-Route::get("/pintu-masuk", function(){
-    return "Selamat datang di pintu masuk";
-});
+Route::get("/pintu-masuk", 'TestController@pintuMasuk');
