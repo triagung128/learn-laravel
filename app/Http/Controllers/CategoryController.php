@@ -15,7 +15,8 @@ class CategoryController extends Controller
     {
         // return "DAFTAR CATEGORY";
         // return \Redirect::to("categories/10/edit");
-        return \Redirect::away("https://google.co.id");
+        // return \Redirect::away("https://google.co.id");
+        return view("category/index"); // -> harus ada file resources/views/category/index.blade.php
     }
 
     /**
