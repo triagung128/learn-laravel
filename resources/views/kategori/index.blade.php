@@ -1,5 +1,9 @@
 @extends("layouts.app")
 
+@section('title')
+   Daftar Kategori
+@endsection
+
 @section("content")
    <ul>
       @foreach($daftar_kategori as $kategori)
