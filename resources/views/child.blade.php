@@ -5,9 +5,9 @@
 @endsection
 
 @section("content")
+   @component("alert", ["type" => "success"])
+      Alert - Latihan Berhasil
+   @endcomponent
+
    Konten dari child view
 @endsection
-
-@component("alert")
-   Alert - Latihan Berhasil
-@endcomponent
