@@ -7,4 +7,7 @@
          <br>
       @endforeach
    </ul>
+
+   <hr>
+   {{$daftar_kategori->links()}}
 @endsection

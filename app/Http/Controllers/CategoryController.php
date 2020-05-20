@@ -11,7 +11,7 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        $daftar_kategori = \App\Category::all();
+        $daftar_kategori = \App\Category::paginate(3);
 
         return view("kategori.index", ["daftar_kategori" => $daftar_kategori]);
     }
